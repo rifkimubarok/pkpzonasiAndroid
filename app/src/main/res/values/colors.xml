@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1474cb</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="whiteSmoke">#ecedee</color>
+    <color name="white">#fff</color>
+    <color name="goldenRod">#f6a82e</color>
+    <color name="royalBlue">#1474cb</color>
+    <color name="darklatesgray">#272c33</color>
+    <color name="gray700">#5f6368</color>
+    <color name="lightblue800">#0179CA</color>
+
+    <color name="placeholder_bg">#dddddd</color>
+    <color name="item_name">#0c0c0c</color>
+    <color name="description">#1a1a1a</color>
+    <color name="chef">#777</color>
+    <color name="timestamp">#777</color>
+</resources>

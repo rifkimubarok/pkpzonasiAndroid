@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeContent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="id.go.kemdikbud.pkpberbasiszonasi.Fragment.ContentCoursesFragment">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/layoutNestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/border_shadow"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/opt_unit_course"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutWebView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/playerViewLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/playerView"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/movie" />
+                    <ImageView
+                        android:layout_alignParentRight="true"
+                        android:layout_width="30dp"
+                        android:layout_above="@+id/textCaption"
+                        android:background="@drawable/ic_download_done"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"/>
+
+                    <TextView
+                        android:id="@+id/textCaption"
+                        android:layout_below="@+id/playerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*Tap pada ikon video untuk memulai video pembelajaran"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/holo_red_dark" />
+                </RelativeLayout>
+
+                <WebView
+                    android:id="@+id/contentSummary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </WebView>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:scrollbars="vertical" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.v4.widget.SwipeRefreshLayout>

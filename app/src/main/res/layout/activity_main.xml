@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteSmoke"
+    tools:context="id.go.kemdikbud.pkpberbasiszonasi.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whiteSmoke"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/logo_kemdikbud"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo_kemendikbud" />
+
+        <TextView
+            android:id="@+id/label_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/Splash_name"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/goldenRod"
+            android:textSize="11pt"
+            android:textStyle="bold"
+            android:layout_below="@+id/logo_kemdikbud"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/splash_name_sub"
+            android:textAlignment="center"
+            android:textSize="11pt"
+            android:layout_below="@+id/label_title"/>
+    </RelativeLayout>
+</ScrollView>
